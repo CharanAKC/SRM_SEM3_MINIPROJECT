@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/9a7165a460.js" crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <nav id="topbar">
+            <div id="left-menu">
+                <div id="logo">
+                    <a href="#"><span>Shop</span>lane</a>
+                </div>
+                <a href="#clothing-section">Clothing</a>
+                <a href="#accessory-section">Accessories</a>
+            </div>
+            <div id="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" name="search" id="search-box" placeholder="Search for Clothing and Accesories">
+            </div>
+            <div id="right-menu">
+                <div id="cart-wrapper">
+                    <p id="cart-count">0</p>
+                    <a href="checkout/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <!-- Hamburger Section -->
+                <div id="menu-icon">&#9776;</div>
+                <ul id="left-menu-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#clothing-section">Clothing</a></li>
+                        <li><a href="#accessory-section">Accessories</a></li>
+                </ul>
+                <i class="fa fa-user-circle-o"></i>
+                <button id="login-btn">Login</button>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to ShopLane Registration</h1>
+        <form action="">
+            <fieldset>
+                <legend>User Registration</legend>
+                <div>
+                    <label for="user">Username</label><br>
+                    <input type="text" id="user" required>
+                </div>
+                <div>
+                    <label for="pass" name="pass">Password</label><br>
+                    <input type="password" id="pass" required>
+                </div>
+                <div>
+                    <label for="pass-check" name="pass-check">Re-Enter Password</label><br>
+                    <input type="password" id="pass-check" required>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox" id="passCheckbox" onchange="togglePass()">
+                    <label for="passCheckbox" id="checkbox" >Show Password</label>
+                </div>
+                <button id="register-btn">Register</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <p class="footer-heading">ONLINE STORE</p>
+            <a href="" class="footer-link">MEN CLOTHING</a>
+            <a href="" class="footer-link">WOMEN CLOTHING</a>
+            <a href="" class="footer-link">MEN ACCESSORIES</a>
+            <a href="" class="footer-link">WOMEN ACCESSORIES</a>
+        </div>
+        <div>
+            <p class="footer-heading">HELPFUL LINKS</p>
+            <a href="" class="footer-link">HOME</a>
+            <a href="" class="footer-link">ABOUT</a>
+            <a href="" class="footer-link">CONTACT</a>
+        </div>
+        <div>
+            <p class="footer-heading">PARTNERS</p>
+            <a href="" class="footer-link">ZARA</a>
+            <a href="" class="footer-link">PANTALOONS</a>
+            <a href="" class="footer-link">LEVIS</a>
+            <a href="" class="footer-link">UCB</a>
+            <a href="" class="footer-link">+ MANY MORE</a>
+        </div>
+        <div>
+            <p class="footer-heading">ADDRESS</p>
+            <p class="footer-link">BUILDING 101</p>
+            <p class="footer-link">CENTRAL AVENUE</p>
+            <p class="footer-link">LA - 902722</p>
+            <p class="footer-link">UNITED STATES</p>
+        </div>
+    </footer>
+    <!-- <script src="login.js"></script> -->
+    <script src="register.js"></script>
+</body>
+</html>

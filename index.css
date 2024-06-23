@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Caveat+Brush&family=Dosis&family=Inter:wght@400;800&family=Montserrat&family=Open+Sans&family=Poppins&family=Raleway&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#topbar {
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+
+#left-menu {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+}
+
+#logo > a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#logo span {
+    font-weight: 800;
+}
+
+#left-menu > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#search-wrapper {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+#search-wrapper > i {
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+
+#search-box {
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+
+#right-menu {
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+#right-menu > i {
+    font-size: 30px;
+    
+}
+
+#cart-wrapper {
+    position: relative;
+    margin-right: 32px;
+}
+
+#cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+
+#cart-wrapper > a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu-icon, #left-menu-list{
+    display: none;
+}
+
+#logout-btn{
+    border: none;
+    margin-left: 49px;
+    background-color: brown;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 70%;
+    cursor: pointer;
+}
+
+/* Main Section */
+main {
+    width: 100%;
+    min-height: 80vh;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding-bottom: 8%;
+}
+
+/* Carousel */
+.slick-slide {
+    width: 100%;
+    margin: 0 80px;
+}
+
+.slick-dots {
+    list-style-type: none;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots button {
+    display: inline-block;
+    font-size: 0px;
+    color: #ccc;
+    background-color: #ccc;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 0;
+    margin-left: 6px;
+    margin-right: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.slick-active button {
+    background-color: #aaa;
+}
+
+/* Product Card Section */
+.section-heading{
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.homepage-section {
+    padding: 4% 8% 0;
+}
+
+.product {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.product-card{
+    width: 100%;
+    max-width: 19%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+}
+
+.product-card > a{
+    text-decoration: none;
+    color: black;
+}
+
+.product-img{
+    width: 100%;
+}
+
+.product-details{
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.product-details > h4 {
+    font-weight: 600;
+    margin: 0;
+    font-size: 16px;
+}
+
+.product-details > h5 {
+    font-weight: 600;
+    opacity: 0.8;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.product-details > p{
+    margin: 0;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #009688;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4% 8%;
+}
+
+footer > div {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+footer > div:first-of-type {
+    padding-left: 0;
+}
+
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (max-width: 400px) {
+    #topbar {
+        padding: 16px 0;
+        justify-content: start;
+    }
+
+    #search-wrapper{
+        max-width: 250px;
+        margin: 0 10px;
+    }
+    /* Hide the navigation links */
+    #left-menu {
+      display: none;
+    }
+  
+    /* hamburger menu icon styles */
+    #menu-icon {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    #menu-icon:hover + #left-menu-list{
+        display: block;
+    }
+  
+    #left-menu-list {
+      /* display: block; */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      box-shadow: 0px 2px 5px #ccc;
+      z-index: 10;
+      width: 100%;
+    }
+  
+    #left-menu-list a {
+      display: block;
+      padding: 10px 16px;
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    #right-menu > i {
+        font-size: 20px;
+    }
+    .product-card {
+      max-width: 100%;
+      margin: 0 auto;
+      flex: 1 1 calc(100% - 20px); /* Adjust the width as needed */
+    }
+    footer{
+        flex-direction: column;
+    }
+
+    footer > div {
+        padding-left: 0px;
+    }
+  }
+  
+  @media(prefers-color-scheme: light){
+    body{
+        background-color: whitesmoke;
+        color: black;
+    }
+    header{
+        background-color: white;
+        color: #1c1b1e;
+    }
+    #right-menu > i{
+        color : black;
+    }
+    form{
+        color : black!important;
+    }
+    
+  }
+
+  @media(prefers-color-scheme: dark){
+    body{
+        background-color: rgb(62, 58, 58);
+        color: white;
+    }
+    header{
+        background-color: #1c1b1e;
+        color: white;
+    }
+    #right-menu > i{
+        color : black;
+    }
+  }

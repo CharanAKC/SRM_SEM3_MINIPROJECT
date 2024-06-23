@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    /* padding: 20px; */
+}
+
+main{
+    width: 100%;
+    min-height: 50vh;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 0;
+}
+.confirmation-container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+.confirmation-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.confirmation-message {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.back-to-home-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.back-to-home-button:hover {
+    background-color: #0056b3;
+}

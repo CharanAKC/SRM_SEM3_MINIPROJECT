@@ -1,0 +1,10 @@
+main{
+    margin-bottom: 200px;
+}
+
+#register-btn{
+    margin-left: 10%;
+    border: none;
+    border-radius: 20%;
+    padding: 8px 15px;
+}
